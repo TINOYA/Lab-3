@@ -1,22 +1,32 @@
+import random
 import tkinter as tk
 from tkinter import Entry, Button, Label , PhotoImage
-import random
+from pygame import mixer
+
+
+mixer.init()
+mixer.music.load('29. Children of Rejuvenation.mp3')
+
+mixer.music.play(-1)
 
 def generate_key():
     key = ''.join(random.choice('0123456789ABCDEF') for i in range(16))
     key_entry.delete(0, tk.END)
     key_entry.insert(0, key)
 
-# Создаем основное окно
+
 window = tk.Tk()
-window.title("Генератор ключей")
+window.title("Генератор ключей перед Божественным Драконом")
+window.geometry('1300x750')
+window.resizable(width=False , height=False) 
+ 
+ 
+mixer.init()
+mixer.music.load('29. Children of Rejuvenation.mp3')
 
-# Найденная картинка на фоне
-# window.image = PhotoImage(file='SEKIRO.png')
-# bg_logo = Label(window, image=window.image)
-# bg_logo.grid(row=0, column=0)
+mixer.music.play(-1)
 
-background_image = tk.PhotoImage(file='SEKIRO.png')  
+background_image = tk.PhotoImage(file='SEKIR.png')  
 background_label = tk.Label(window, image=background_image)
 background_label.place(relwidth=1, relheight=1)
 
