@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import Entry, Button, Label
+from tkinter import Entry, Button, Label , PhotoImage
 import random
 
 def generate_key():
@@ -12,7 +12,11 @@ window = tk.Tk()
 window.title("Генератор ключей")
 
 # Найденная картинка на фоне
-background_image = tk.PhotoImage(file="")  # Замените "background_image.png" на путь к вашей картинке
+# window.image = PhotoImage(file='SEKIRO.png')
+# bg_logo = Label(window, image=window.image)
+# bg_logo.grid(row=0, column=0)
+
+background_image = tk.PhotoImage(file='SEKIRO.png')  
 background_label = tk.Label(window, image=background_image)
 background_label.place(relwidth=1, relheight=1)
 

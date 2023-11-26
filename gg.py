@@ -6,7 +6,7 @@ root.title('Ajy')
 
 
 
-root.image = PhotoImage(file='SEKIROOOO.jpg')
+root.image = PhotoImage(file='SEKIRO.png')
 bg_logo = Label(root, image=root.image)
 bg_logo.grid(row=0, column=0)
 
